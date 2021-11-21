@@ -28,14 +28,14 @@ $resultado=$clase->ConsultaEstado();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Gestión</title>
   </head>
-  <body background="">
+  <body class="text-black" background="">
     <header>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mx-auto">
             <a class=" float-left" href="ConsultarCandidato.php"><img  src="https://upload.wikimedia.org/wikipedia/commons/2/28/Font_Awesome_5_solid_user-plus.svg" width="60" height="60" class="img-fluid "></a>
             <a class=" float-right" href="../salir.php"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Font_Awesome_5_solid_sign-out-alt.svg" width="60" height="60" align="bottom"class="img-fluid"></a>
-            <h2 class="text-center text-black m-3">Gestión de Candidatos</h2>
+            <h2 class="text-center m-3">Gestión de Candidatos</h2>
           </div>
         </div>
       </div>

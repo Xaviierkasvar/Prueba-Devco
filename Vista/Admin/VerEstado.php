@@ -70,7 +70,7 @@ $resultado=$clase->ConsultaCandidatoEtp3($ced);
           <div class="col-12 mx-auto">
             <a class=" float-left" href="Consulta.php"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Back_Arrow.svg/240px-Back_Arrow.svg.png" width="60" height="60" class="img-fluid "></a>
             <a class=" float-right" href="../salir.php"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Font_Awesome_5_solid_sign-out-alt.svg" width="60" height="60" align="bottom"class="img-fluid"></a>
-            <h2 class="text-center text-white m-3">Avances del Candidato</h2>    
+            <h2 class="text-center m-3">Avances del Candidato</h2>    
           </div>
         </div>
       </div>
