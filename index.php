@@ -42,7 +42,7 @@ if (!isset($_REQUEST['x']))
               </div>
               <div class="mx-auto tw">
               <div class="modal-body">
-                  <span class="n fas fa-user-lock fa-10x"></span>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Font_Awesome_5_solid_user-lock.svg" alt="">
                   <form action="Controlador/ValidarInicioSesion.php" method="post">
                   <input style="border-radius: 20px;" type="email" placeholder="Usuario/Correo" name="usuario" />
                   <input style="border-radius: 20px;" type="password" placeholder="Contraseña" name="clave" />
