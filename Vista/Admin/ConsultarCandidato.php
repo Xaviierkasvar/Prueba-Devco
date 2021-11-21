@@ -22,9 +22,9 @@ if (!isset($_REQUEST['msj']))
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Consultar Candidato</title>
   </head>
-  <body background="../img/2.jpg">
+  <body class="text-black" background="../img/2.jpg">
     <header>
-      <div class="text-black" class="container-fluid">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12 mx-auto">
             <a class=" float-left" href="Consulta.php"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Back_Arrow.svg/240px-Back_Arrow.svg.png" width="60" height="60" class="img-fluid "></a>
