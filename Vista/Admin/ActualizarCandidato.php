@@ -18,11 +18,8 @@ $clase = new Candidato;
     $cor = $registro->correo;
     $rol = $registro->rol;
     $fec = $registro->fec_post;
-    $asp = $registro->asp_sal;
+    $salario = $registro->asp_sal;
     $com = $registro->coment;
-    
-
-
 }
 ?>
 <!doctype html>
@@ -32,12 +29,12 @@ $clase = new Candidato;
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../Css/bootstrap.min.css">    
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> <!--Iconos--> 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="../Css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Css/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../Css/Style.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css"> <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript">
         alert("Consulta exitosa");
       </script>
@@ -49,8 +46,8 @@ $clase = new Candidato;
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mx-auto">
-            <a class=" float-left" href="ConsultarCandidato.php"><img  src="../img/16.png" width="60" height="60" class="img-fluid "></a>
-            <a class=" float-right" href="../salir.php"><img src="../img/salir.svg" width="60" height="60" align="bottom"class="../img-fluid"></a>
+            <a class=" float-left" href="ConsultarCandidato.php"><i class="n fas fa-arrow-circle-left fa-4x"></i></a>
+            <a class=" float-right" href="../salir.php"><i class="n fas fa-sign-out-alt fa-4x"></i></a>
             <h1 class="text-center m-3" style="color:white;">Actualizar Candidato</h1>            
           </div>
         </div>
@@ -65,11 +62,11 @@ $clase = new Candidato;
           <form action="../../Controlador/UpdateCandidato.php" method="POST">            
                       <input type="number" value="<?php echo $ced;?>" id="cedula" name="cedula" class="form-control" disabled>
                       <label>Nombre:</label>
-                      <input type="Text" class="form-control" value="<?php echo $nom;?>" name="nombre" id="nombre">
+                      <input type="Text" class="form-control" value="<?php echo $nom;?>" name="nombre" id="nombre" required>
                       <label>Apellido:</label>
-                      <input type="Text" class="form-control" value="<?php echo $ape;?>" name="apellido" id="apellido">
+                      <input type="Text" class="form-control" value="<?php echo $ape;?>" name="apellido" id="apellido" required>
                       <label>Correo:</label>
-                      <input type="email" class="form-control" value="<?php echo $cor;?>" name="correo" id="correo">
+                      <input type="email" class="form-control" value="<?php echo $cor;?>" name="correo" id="correo" required>
                       <label>Rol:</label>
                       <select class="form-control" id="rol" name="rol">
                         <option><?php echo $rol;?></option>
@@ -78,14 +75,14 @@ $clase = new Candidato;
                         <option>Automatizador de pruebas</option>
                       </select>
                       <label>Fecha Postulación:</label>
-                      <input type="date" class="form-control" value="<?php echo $fec;?>" id="fecPost" name="fecPost">
+                      <input type="date" class="form-control" value="<?php echo $fec;?>" id="fecPost" name="fecPost" required>
                       <label for="salario">Aspiración Salarial:</label>
-                      <output id="outsalario" name="outsalario" for="salario"><?php echo $asp;?></output>
-                      <input type="range" class="form-control" id="salario" name="salario" min="500000" max="5000000" step="50000" value="<?php echo $asp;?>" onchange="document.getElementById('outsalario').value=value">                      
+                      <output id="outsalario" name="outsalario" for="salario"><?php echo $salario;?></output>
+                      <input type="range" class="form-control" id="salario" name="salario" min="500000" max="5000000" step="50000" value="<?php echo $salario;?>" onchange="document.getElementById('outsalario').value=value">                      
                       <label>Comentarios:</label>
                       <textarea type="Text" class="form-control" name="com" id="com"><?php echo $com;?></textarea><br>
                       <button type="submint" class="btn btn-info btn-block" style="">Guardar</button>
-                      <input type="text" value="<?php echo $ced;?>" class="form-control dn" id="cedula" name="cedula">
+                      <input type="text" value="<?php echo $ced;?>" class="form-control d-none" id="cedula" name="cedula">
           </div>
           <div class="col-3 tf" style="margin-bottom: 60px;">
           <div class="col-12 b-3 p-3">

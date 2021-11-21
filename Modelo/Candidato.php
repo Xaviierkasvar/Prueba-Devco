@@ -247,10 +247,22 @@ class Candidato
 		$this->Conexion->close();
 		return $resultado;	
 	}
+	public function CambiarCandidato($cedula,$nombre,$apellido,$cor,$rol,$fecPost,$salario,$com)
+	{
+		$this->cedula=$cedula;
+		$this->nombre=$nombre;
+		$this->apellido=$apellido;
+		$this->cor=$cor;
+		$this->rol=$rol;
+		$this->fecPost=$fecPost;
+		$this->salario=$salario;
+		$this->com=$com;		
+	}
 	public function ActualizarCandidato()
 	{	
 		$this->Conexion=Conectarse();
 		$sql="update info_candidato set cedula='$this->cedula',nombre='$this->nombre',apellido='$this->apellido',correo='$this->cor',rol='$this->rol',fec_post='$this->fecPost',asp_sal='$this->salario',coment='$this->com' where cedula ='$this->cedula'";
+		$resultado=$this->Conexion->query($sql);
 		$this->Conexion->close();
 		return $resultado;	
 	}

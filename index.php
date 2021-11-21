@@ -11,11 +11,9 @@ if (!isset($_REQUEST['x']))
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="Vista/Css/bootstrap.min.css">    
-    <link rel="stylesheet" href="Vista/Css/font-awesome.min.css"> <!--Iconos--> 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="Vista/Css/font-awesome.min.css">
-    <link rel="stylesheet" href="Vista/Css/Style.css">
+    <link rel="stylesheet" type="text/css" href="Vista/Css/bootstrap.min.css">    
+    <link rel="stylesheet" type="text/css" href="Vista/fontawesome/css/all.css"> <!--Iconos-->
+    <link rel="stylesheet" type="text/css" href="Vista/Css/Style.css">
     <script type="text/javascript" src="Vista/Script/jquery.js"></script>
     <script src="Vista/Script/script.js" ></script>
     <title>Bienvenido a Prueba Devco</title>
@@ -44,7 +42,7 @@ if (!isset($_REQUEST['x']))
               </div>
               <div class="mx-auto tw">
               <div class="modal-body">
-                  <img id="img_ini" src="Vista/img/1.png" class="img-fluid">
+                  <span class="n fas fa-user-lock fa-10x"></span>
                   <form action="Controlador/ValidarInicioSesion.php" method="post">
                   <input style="border-radius: 20px;" type="email" placeholder="Usuario/Correo" name="usuario" />
                   <input style="border-radius: 20px;" type="password" placeholder="Contraseña" name="clave" />

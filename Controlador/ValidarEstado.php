@@ -1,6 +1,6 @@
 <?php 
 session_start();
-extract ($_POST);
+extract ($_GET);
 require "../Modelo/ConexionBasesDatos.php";
 require "../Modelo/Candidato.php";
 $obj=new Candidato();
@@ -23,14 +23,14 @@ if($est == 'ETAPA_2'){
 }
 if($est == 'ETAPA_3'){
 	
-	header("location:../Vista/Admin/Consulta.php?msj=1");
+	header("location:../Vista/Admin/VerEstado.php?cedula=$cedula");
 }
 if($est == 'FINALIZAR'){
 	
 	$obj->FinalizarCandidato($_GET['cedula']);
 $resultado=$obj->FinalizarCandidato($cedula);
 if ($resultado) 
-	header("location:../Vista/Admin/Consulta.php?msj=1");
+	header("location:NotificacionAgra.php?cedula=$cedula");
 else
 	header("location:../Vista/Admin/Consulta.php?msj=2");
 }

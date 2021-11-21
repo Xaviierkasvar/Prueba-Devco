@@ -20,22 +20,22 @@ $resultado=$clase->ConsultaEstado();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../Css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="../Css/style.css">
-    <title>Gestión</title>
+    <link rel="stylesheet" type="text/css" href="../Css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../Css/Style.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css"> <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Gestión</title>
   </head>
   <body background="">
     <header>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mx-auto">
-            <a class=" float-left" href="ConsultarCandidato.php"><img  src="../img/add.png" width="50" height="50"></a>
-            <a class=" float-right" href="../salir.php"><img src="../img/salir.svg" width="60" height="60" align="bottom"class="img-fluid"></a>
-            <h2 class="text-center text-black m-3">Gestión de Candidatos</h2>    
+            <a class=" float-left" href="ConsultarCandidato.php"><i class="n fas fa-user-plus fa-4x"></i></a>
+            <a class=" float-right" href="../salir.php"><i class="n fas fa-sign-out-alt fa-4x"></i></a>
+            <h2 class="text-center text-black m-3">Gestión de Candidatos</h2>
           </div>
         </div>
       </div>

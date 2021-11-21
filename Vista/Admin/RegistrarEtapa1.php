@@ -23,14 +23,13 @@ $resultado=$clase->ConsultaCandidato($ced);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../Css/bootstrap.min.css">    
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> <!--Iconos--> 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="../Css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Css/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../Css/Style.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css"> <!--Iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="../Script/script.js" ></script>
     <title>Etapa 1</title>
   </head>
@@ -39,8 +38,8 @@ $resultado=$clase->ConsultaCandidato($ced);
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mx-auto">
-            <a class=" float-left" href="Consulta.php"><img  src="../img/16.png" width="60" height="60" class="img-fluid "></a>
-            <a class=" float-right" href="../salir.php"><img src="../img/salir.svg" width="60" height="60" align="bottom"class="img-fluid"></a>
+            <a class=" float-left" href="Consulta.php"><i class="n fas fa-arrow-circle-left fa-4x"></i></a>
+            <a class=" float-right" href="../salir.php"><i class="n fas fa-sign-out-alt fa-4x"></i></a>
             <h1 class="text-center m-3" style="color:white;">Resultados Etapa 1</h1>            
           </div>
         </div>
@@ -66,9 +65,9 @@ $resultado=$clase->ConsultaCandidato($ced);
                       <label>Comentarios:</label>
                       <textarea type="Text" class="form-control" name="com" id="com"></textarea>
                       <label>Nombre del evaluador:</label>
-                      <input type="Text" class="form-control" id="nom_eva" name="nom_eva"><br>
+                      <input type="Text" class="form-control" id="nom_eva" name="nom_eva" required><br>
                       <button type="submint" class="btn btn-info btn-block" style="">Guardar</button>
-                      <input type="text" value="<?php echo $ced;?>" class="form-control dn" id="cedula" name="cedula">
+                      <input type="text" value="<?php echo $ced;?>" class="form-control d-none" id="cedula" name="cedula">
         </div>
     </section>
     <footer>
