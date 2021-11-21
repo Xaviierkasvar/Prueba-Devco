@@ -26,7 +26,7 @@ $ced=$_GET['cedula'];
       </script>
     <title>Registrar Candidato</title>
   </head>
-  <body background="../img/2.jpg">
+  <body class="text-black" background="../img/2.jpg">
     <header>
       <div class="container-fluid">
         <div class="row">

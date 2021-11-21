@@ -41,7 +41,7 @@ $clase = new Candidato;
       <script src="../Script/script.js" ></script>
     <title>Actualizar Candidato</title>
   </head>
-  <body background="../img/2.jpg">
+  <body class="text-black" background="../img/2.jpg">
     <header>
       <div class="container-fluid">
         <div class="row">

@@ -33,7 +33,7 @@ $resultado=$clase->ConsultaCandidato($ced);
       <script src="../Script/script.js" ></script>
     <title>Etapa 1</title>
   </head>
-  <body background="../img/2.jpg">
+  <body class="text-black" background="../img/2.jpg">
     <header>
       <div class="container-fluid">
         <div class="row">

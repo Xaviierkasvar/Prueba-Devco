@@ -49,7 +49,7 @@ $pro = $sum / 4;
       <script src="../Script/script.js" ></script>
     <title>Etapa 3</title>
   </head>
-  <body background="../img/2.jpg">
+  <body class="text-black" background="../img/2.jpg">
     <header>
       <div class="container-fluid">
         <div class="row">
