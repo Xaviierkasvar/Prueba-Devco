@@ -44,7 +44,7 @@ $ced=$_GET['cedula'];
           <div class="col-4">
           </div>
           <div class="col-4 tf" style="margin-bottom: 60px;">
-                      <form action="../../Controlador/AddCandidato.php" method="GET">
+                      <form action="../../Controlador/ValidarEstado.php?" method="GET">
                       <input type="number" value="<?php echo $ced;?>" id="cedula" name="cedula" class="form-control" disabled>
                       <label>Nombre:</label>
                       <input type="Text" class="form-control" name="nombre" id="nombre" required>
@@ -67,6 +67,8 @@ $ced=$_GET['cedula'];
                       <textarea type="Text" class="form-control" name="com" id="com"></textarea><br>
                       <button type="submint" class="btn btn-info btn-block" style="">Guardar</button>
                       <input type="text" value="<?php echo $ced;?>" class="form-control d-none" id="cedula" name="cedula">
+                      <input type="text" value="CREAR" class="form-control d-none" id="estado" name="estado">
+                    </form>
         </div>
     </section>
     <footer>

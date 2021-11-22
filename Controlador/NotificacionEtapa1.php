@@ -39,5 +39,6 @@ $resultado=$clase->ConsultaCandidato($_GET['cedula']);
   ];
   $response = $mj->post(Resources::$Email, ['body' => $body]);
   $response->success() && var_dump($response->getData());
+  
   header("location:../Vista/Admin/Consulta.php?msj=4");
 ?>

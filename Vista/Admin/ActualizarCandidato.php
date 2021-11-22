@@ -59,7 +59,7 @@ $clase = new Candidato;
           <div class="col-4">
           </div>
           <div class="col-4 tf" style="margin-bottom: 60px;">
-          <form action="../../Controlador/UpdateCandidato.php" method="GET">            
+          <form action="../../Controlador/ValidarEstado.php" method="GET">            
                       <input type="number" value="<?php echo $ced;?>" id="cedula" name="cedula" class="form-control" disabled>
                       <label>Nombre:</label>
                       <input type="Text" class="form-control" value="<?php echo $nom;?>" name="nombre" id="nombre" required>
@@ -83,6 +83,8 @@ $clase = new Candidato;
                       <textarea type="Text" class="form-control" name="com" id="com"><?php echo $com;?></textarea><br>
                       <button type="submint" class="btn btn-info btn-block" style="">Guardar</button>
                       <input type="text" value="<?php echo $ced;?>" class="form-control d-none" id="cedula" name="cedula">
+                       <input type="text" value="UPDATE" class="form-control d-none" id="estado" name="estado">
+                    </form>
           </div>
           <div class="col-3 tf" style="margin-bottom: 60px;">
           <div class="col-12 b-3 p-3">

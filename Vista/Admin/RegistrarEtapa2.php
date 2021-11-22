@@ -51,7 +51,7 @@ $resultado=$clase->ConsultaCandidato($ced);
           <div class="col-4">
           </div>
           <div class="col-4 tf" style="margin-bottom: 60px;">
-                      <form action="../../Controlador/RegistrarEtapa2.php" method="GET">
+                      <form action="../../Controlador/ValidarEstado.php" method="GET">
                       <label>Nombre:</label>
                       <input type="Text" value="<?php echo $nom,'&nbsp;',$ape;?>" class="form-control" name="nombre" id="nombre" disabled>
                       <label>Correo:</label>
@@ -68,6 +68,8 @@ $resultado=$clase->ConsultaCandidato($ced);
                       <input type="Text" class="form-control" id="nom_eva" name="nom_eva" required><br>
                       <button type="submint" class="btn btn-info btn-block" style="">Guardar</button>
                       <input type="text" value="<?php echo $ced;?>" class="form-control d-none" id="cedula" name="cedula">
+                      <input type="text" value="R_ETAPA_2" class="form-control d-none" id="estado" name="estado">
+                    </form>
         </div>
     </section>
     <footer>

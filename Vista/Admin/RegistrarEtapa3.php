@@ -67,7 +67,7 @@ $pro = $sum / 4;
           <div class="col-4">
           </div>
           <div class="col-4 tf" style="margin-bottom: 60px;">
-                      <form action="../../Controlador/RegistrarEtapa3.php" method="GET">
+                      <form action="../../Controlador/ValidarEstado.php" method="GET">
                       <label>Nombre:</label>
                       <input type="Text" value="<?php echo $nom,'&nbsp;',$ape;?>" class="form-control" name="nombre" id="nombre" disabled>
                       <label>Correo:</label>
@@ -85,6 +85,8 @@ $pro = $sum / 4;
                       <button type="submint" class="btn btn-info btn-block" style="">Guardar</button>
                       <input type="text" value="<?php echo $ced;?>" class="form-control d-none" id="cedula" name="cedula">
                       <input type="text" value="<?php echo $pro;?>" class="form-control d-none" id="promedio" name="promedio">
+                      <input type="text" value="R_ETAPA_3" class="form-control d-none" id="estado" name="estado">
+                    </form>
         </div>
     </section>
     <footer>
