@@ -53,11 +53,11 @@ $resultado=$clase->ConsultaEstado();
                  echo '<br><br><div class="alert alert-info text-center">Finalización de candidato exitoso</div>';
                if ($msj==4)
                  echo '<br><br><div class="alert alert-info text-center">Registro de candidato exitoso</div>';
-               if ($msj==4)
-                 echo '<br><br><div class="alert alert-info text-center">Registro de candidato Editato exitoso</div>';
+               if ($msj==5)
+                 echo '<br><br><div class="alert alert-info text-center">Registro editado exitosamente</div>';
             ?>
           </div>
-          <div class="col-12 ">
+          <div class="col-12 pb-5">
             <table class="table center table-hover">
               <thead class="thead-dark">
                 <tr>

@@ -44,7 +44,7 @@ $ced=$_GET['cedula'];
           <div class="col-4">
           </div>
           <div class="col-4 tf" style="margin-bottom: 60px;">
-                      <form action="../../Controlador/ValidarEstado.php?" method="GET">
+                      <form action="../../Controlador/RegistrarCandidato.php" method="GET">
                       <input type="number" value="<?php echo $ced;?>" id="cedula" name="cedula" class="form-control" disabled>
                       <label>Nombre:</label>
                       <input type="Text" class="form-control" name="nombre" id="nombre" required>

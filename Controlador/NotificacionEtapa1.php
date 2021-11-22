@@ -5,8 +5,10 @@ require 'vendor/autoload.php';
 require "../Modelo/ConexionBasesDatos.php";
 require "../Modelo/Candidato.php";
 
+$ced = $_GET['cedula'];
+
 $clase = new Candidato;
-$resultado=$clase->ConsultaCandidato($_GET['cedula']);
+$resultado=$clase->ConsultaCandidato($ced);
       while($registro=$resultado->fetch_object())
 {
     $nom = $registro->nombre;
