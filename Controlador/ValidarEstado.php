@@ -1,4 +1,4 @@
-<?php 
+	<?php 
 session_start();
 extract ($_GET);
 require "../Modelo/ConexionBasesDatos.php";

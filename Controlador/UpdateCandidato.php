@@ -1,10 +1,10 @@
 <?php
 session_start();
-extract($_POST); 
+extract($_GET); 
 require "../Modelo/ConexionBasesDatos.php";
 require "../Modelo/Candidato.php";
 $obj=new Candidato();
-$obj->CambiarCandidato($_POST['cedula'],$_POST['nombre'],$_POST['apellido'],$_POST['correo'],$_POST['rol'],$_POST['fecPost'],$_POST['salario'],$_POST['com']);
+$obj->CambiarCandidato($_GET['cedula'],$_GET['nombre'],$_GET['apellido'],$_GET['correo'],$_GET['rol'],$_GET['fecPost'],$_GET['salario'],$_GET['com']);
 $resultado = $obj->ActualizarCandidato();
 if ($resultado)
 	header ("location:../Vista/Admin/ConsultarCandidato.php?msj=4");

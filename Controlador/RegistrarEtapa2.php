@@ -1,12 +1,12 @@
 <?php
 session_start();
-extract ($_POST);
+extract ($_GET);
 require "../Modelo/conexionBasesDatos.php";
 require "../Modelo/Candidato.php";
-$cedula = $_POST['cedula'];
+$cedula = $_GET['cedula'];
 
 $obj=new Candidato();
-$obj->CrearEtp2($_POST['cedula'],$_POST['cpsi'],$_POST['cmed'],$_POST['com'],$_POST['nom_eva']);
+$obj->CrearEtp2($_GET['cedula'],$_GET['cpsi'],$_GET['cmed'],$_GET['com'],$_GET['nom_eva']);
 $resultado=$obj->AgregarEtp2();
 if ($resultado) 
 	header("location:NotificacionEtapa3.php?cedula=$cedula");

@@ -1,12 +1,12 @@
 <?php
 session_start();
-extract ($_POST);
+extract ($_GET);
 require "../Modelo/conexionBasesDatos.php";
 require "../Modelo/Candidato.php";
-$cedula = $_POST['cedula'];
+$cedula = $_GET['cedula'];
 
 $obj=new Candidato();
-$obj->CrearEtp3($_POST['cedula'],$_POST['promedio'],$_POST['acuerdo'],$_POST['fecini'],$_POST['coment']);
+$obj->CrearEtp3($_GET['cedula'],$_GET['promedio'],$_GET['acuerdo'],$_GET['fecini'],$_GET['coment']);
 $resultado=$obj->AgregarEtp3();
 if ($resultado) 
 	header("location:NotificacionSelec.php?cedula=$cedula");

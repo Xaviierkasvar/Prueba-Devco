@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 require 'vendor/autoload.php';
@@ -30,14 +29,14 @@ $resultado=$clase->ConsultaCandidato($_GET['cedula']);
             'Name' => "$nom $ape"
           ]
         ],
-        'Subject' => "Notificación Preseleccionado",
+        'Subject' => "Notificación Avance Etapa 2",
         'TextPart' => "¡FELICIDAES!",
-        'HTMLPart' => "Nos complace informarle que tu hoja de vida llego a nuestra base de datos de candidatos y han sido preseleccionados para continuar con el proceso de selección para algunas vacantes que tenemos de Ingeniero de Desarrollo.<br/>Adjunto a este correo te enviamos una Prueba teórica y técnica la cual tienes un plazo de 5 dias apartir de la fecha para resolverlo y enviarlo como respuesta a este mismo correo.<br />Mucha suerte y quedamos pendientes de tu respuesta. ",
+        'HTMLPart' => "<h3>Nos complace informarte tu avance satisfactorio en el proceso de selección a La etapa 2<br />Muy pendiente a los canales dispuestos nos estaremos comunicando para consertar el sueldo final y la fecha de inicio.",
         'CustomID' => "AppGettingStartedTest"
       ]
     ]
   ];
   $response = $mj->post(Resources::$Email, ['body' => $body]);
   $response->success() && var_dump($response->getData());
-  header("location:../Vista/Admin/Consulta.php?msj=4");
+  header("location:../Vista/Admin/Consulta.php?msj=1");
 ?>

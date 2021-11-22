@@ -50,8 +50,9 @@ $resultado=$clase->ConsultaEstado();
                if ($msj==2)
                  echo '<br><br><div class="alert alert-danger text-center">Error al intentar registrar Avance</div>';
                if ($msj==3)
-                 echo '<br><br><div class="alert alert-info text-center">Finalizació de candidato exitoso</div>';
-              ?>  
+                 echo '<br><br><div class="alert alert-info text-center">Finalización de candidato exitoso</div>';
+               if ($msj==4)
+                 echo '<br><br><div class="alert alert-info text-center">Registro de candidato exitoso</div>';
           </div>
           <div class="col-12 ">
             <table class="table center table-hover">

@@ -51,7 +51,7 @@ $resultado=$clase->ConsultaCandidato($ced);
           <div class="col-4">
           </div>
           <div class="col-4 tf" style="margin-bottom: 60px;">
-                      <form action="../../Controlador/RegistrarEtapa1.php" method="POST">
+                      <form action="../../Controlador/RegistrarEtapa1.php" method="GET">
                       <label>Nombre:</label>
                       <input type="Text" value="<?php echo $nom,'&nbsp;',$ape;?>" class="form-control" name="nombre" id="nombre" disabled>
                       <label>Correo:</label>
