@@ -83,7 +83,7 @@ $resultado=$clase->ConsultaEstado();
                           <td>'.$registro['asp_sal'].'</td>
                           <td>'.$registro['coment'].'</td>
                           <td>'.$registro['estado'].'</td>
-                          <td><a class="btn d-inline btn-primary" href="VerEstado.php?cedula='.$registro['cedula'].' data-toggle="tooltip" title="Detalles Proceso"">Ver</a><a class="btn d-inline btn-success" href="../../Controlador/ValidarEstado.php?cedula='.$registro['cedula'].'&estado='.$registro['estado'].' data-toggle="tooltip" title="Avanzar sguiente etapa"">Avanzar</a><a class="btn d-inline btn-danger" href="../../Controlador/ValidarEstado.php?cedula='.$registro['cedula'].'&estado='.$fin.' data-toggle="tooltip" title="Enviar Agradecimientos"">Finalizar</a></td>
+                          <td><a class="btn d-inline btn-primary" data-toggle="tooltip" title="Detalles Proceso" href="VerEstado.php?cedula='.$registro['cedula'].'">Ver</a><a class="btn d-inline btn-success" data-toggle="tooltip" title="Avanzar sguiente etapa" href="../../Controlador/ValidarEstado.php?cedula='.$registro['cedula'].'&estado='.$registro['estado'].'">Avanzar</a><a class="btn d-inline btn-danger" data-toggle="tooltip" title="Enviar Agradecimientos" href="../../Controlador/ValidarEstado.php?cedula='.$registro['cedula'].'&estado='.$fin.'">Finalizar</a></td>
                         </tr>';}
                       ?>
               </tbody>
