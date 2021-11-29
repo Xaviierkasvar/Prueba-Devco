@@ -15,12 +15,12 @@ $resultado=$clase->ConsultaCandidato($_GET['cedula']);
   
   use \Mailjet\Resources;
 
-  $mj = new \Mailjet\Client('9a488e483468e294f5f4f5c3dc020463','5b1112471f222cf35c0255d394d95f88',true,['version' => 'v3.1']);
+  $mj = new \Mailjet\Client('bb461087bf1469650013311d20a8df93','eb613da67ce3824d05ec59526296ca9b',true,['version' => 'v3.1']);
   $body = [
     'Messages' => [
       [
         'From' => [
-          'Email' => "witicof691@nefacility.com",
+          'Email' => "lifagis212@terasd.com",
           'Name' => "Prueba Devco"
         ],
         'To' => [
@@ -37,6 +37,6 @@ $resultado=$clase->ConsultaCandidato($_GET['cedula']);
     ]
   ];
   $response = $mj->post(Resources::$Email, ['body' => $body]);
-  $response->success() && var_dump($response->getData());
+  $response->success() && var_dump($response->getData()); 
   header("location:../Vista/Admin/Consulta.php?msj=1");
 ?>
